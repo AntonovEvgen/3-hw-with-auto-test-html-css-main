@@ -33,13 +33,14 @@ header span {
     padding: 60px 0;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
 .main-section .wrapper {
     display: flex;
     align-items: center;
+    gap: 60px;
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
 }
 
@@ -128,7 +129,7 @@ select:hover,
 
 .skills-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
@@ -156,7 +157,6 @@ select:hover,
 form {
     margin-bottom: 40px;
     display: flex;
-    order: -1;
 }
 
 .text-field {
